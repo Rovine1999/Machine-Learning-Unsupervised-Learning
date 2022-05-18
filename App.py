@@ -2,7 +2,7 @@ from unittest import result
 import joblib ### load models into the app
 import streamlit as st
 
-classifier = joblib.load('svc.pk1')
+classifier = joblib.load('svc.pkl')
 
 def prediction_generator(sepal_length, sepal_width, petal_length, petal_width):
     prediction = classifier.predict([[sepal_length, sepal_width, petal_length, petal_width]])
@@ -30,6 +30,6 @@ def main():
         result = prediction_generator(sepal_length, sepal_width, petal_length, petal_width)
         st.success(f'The Plant is an {result}')
 
-# print(result)
-    if __name__ == '__main__':
+
+if __name__ == '__main__':
         main()
