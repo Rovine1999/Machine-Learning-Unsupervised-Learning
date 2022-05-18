@@ -17,8 +17,8 @@ Machine learning, unsupervised and supervised model to detect tree species using
 ##### Or download the zip file to your preffered folder and extract the file
 
 ### Technology used
-Python
-Jupyter notebook
+1). Python
+2). Jupyter notebook
 
 ### Known Bugs
 No bugs left unsolved
